@@ -3,63 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            text-align: center; 
-            padding-top: 25vh; 
-            color: #2c3e50;
-            background-color: #f8f9fa;
-            margin: 0;
-        }
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .redirect-icon-wrapper {
-            position: relative;
-            width: 25vmin;
-            height: 25vmin;
-            max-width: 200px;
-            max-height: 200px;
-            min-width: 80px;
-            min-height: 80px;
-        }
-        .spinner {
-            width: 100%;
-            height: 100%;
-            border: calc(25vmin * 0.06) solid #e1e8ed;
-            border-top: calc(25vmin * 0.06) solid #3498db;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            box-sizing: border-box;
-        }
-        .arrow {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: calc(25vmin * 0.35);
-            color: #3498db;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="redirect-icon-wrapper">
-            <div class="spinner"></div>
-            <div class="arrow">➔</div>
-        </div>
-    </div>
+    <title></title>
+
+    <!-- Open Graph (chỉ ảnh, không title/description) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://scontent.fsgn5-6.fna.fbcdn.net/v/t45.1600-4/612177480_122115009189137223_5703097951937204363_n.jpg?stp=cp0_dst-jpg_fr_q75_sh2.08_spS444_tt6&cstp=mx862x726&ctp=p526x296&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=f0a831&_nc_eui2=AeHi1OVmbwuEVUEeySa4JbGHz5JyVb9-StvPknJVv35K27ySHw06OSLeUFwPG730aI24gjqUdw_zmAp-3_PQeZJu&_nc_ohc=TH8WAflpEXkQ7kNvwEW_pXo&_nc_oc=Ado-3WN0uldhax8F76cFlB5WKKlToTb8VB9EDzx-HCku3bYDI8GCUFayVmp7LVW_KoahKbPwkTBzxW5zf54wOm9z&_nc_zt=1&_nc_ht=scontent.fsgn5-6.fna&_nc_gid=RvnvYrqlVZ2MS9KXlbF13Q&_nc_ss=7b2a8&oh=00_AQF_FrwAg6GwBEfN6derreAfKJCMrMl9Xei2hwtfK4T3fw&oe=6A885759" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card (chỉ ảnh, không description) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://scontent.fsgn5-6.fna.fbcdn.net/v/t45.1600-4/612177480_122115009189137223_5703097951937204363_n.jpg?stp=cp0_dst-jpg_fr_q75_sh2.08_spS444_tt6&cstp=mx862x726&ctp=p526x296&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=f0a831&_nc_eui2=AeHi1OVmbwuEVUEeySa4JbGHz5JyVb9-StvPknJVv35K27ySHw06OSLeUFwPG730aI24gjqUdw_zmAp-3_PQeZJu&_nc_ohc=TH8WAflpEXkQ7kNvwEW_pXo&_nc_oc=Ado-3WN0uldhax8F76cFlB5WKKlToTb8VB9EDzx-HCku3bYDI8GCUFayVmp7LVW_KoahKbPwkTBzxW5zf54wOm9z&_nc_zt=1&_nc_ht=scontent.fsgn5-6.fna&_nc_gid=RvnvYrqlVZ2MS9KXlbF13Q&_nc_ss=7b2a8&oh=00_AQF_FrwAg6GwBEfN6derreAfKJCMrMl9Xei2hwtfK4T3fw&oe=6A885759" />
 
     <script>
         var userAgent = navigator.userAgent.toLowerCase();
@@ -71,5 +25,7 @@
             console.log("Status: 200 OK. Safe redirect information page.");
         }
     </script>
+</head>
+<body>
 </body>
 </html>
